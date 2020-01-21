@@ -1,0 +1,217 @@
+/* MED group will put customizations here for Browser Based HTML Help topic-page changes */
+
+/* File started Dec 4 2006 by Peter to test that resource path takes this and puts it in help.
+The process still needs to be worked out for panel page CSS classes, since med.css is NOT added to those pages yet. */
+
+
+/* This is to fix an IE horizontal scroll bar bug. It turns     */
+/* off the horizontal scroll bar.                               */
+html {
+	overflow-y: scroll;
+}
+
+/* remove comments link for localized versions                  */
+/*
+DIV.footer-block {
+display: none;
+}
+*/
+
+body {
+	margin-bottom: 0pt;
+	margin-left: 12pt;
+	margin-right: 0pt;
+	margin-top: 0pt;
+}
+
+
+/* Setting a right margin on the <body> element causes          */
+/* a problem. Firefox and IE don't display the right margin the */
+/* same way with respect to the head graphic. So I'm setting    */
+/* the right margin for individual elements here. - Darryl      */
+p,
+div.footer-block,
+div.head-block,
+div.head-text span,
+div.note-note,
+div.note-tip,
+div.note-important,
+div.note-related,
+div.note-warning,
+div.bodyprocess,
+div.see-also,
+ul,
+ol {
+	margin-right: 12pt;
+}
+
+/************ Header ***************/
+div.head {
+	background-image: url(../images/head_graphic.gif);
+	/* background-repeat: repeat-y; */
+	margin-left: -12pt;
+	margin-right: 0pt;
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	padding-top: 2pt;
+	border-bottom: none;
+}
+
+div.head-text {
+	padding-top: 6pt;
+	padding-bottom: 6pt;
+}
+
+/* head-text */
+div.head-text span {
+	line-height: 1.2em;
+	padding-left: 0;
+	margin-left: 0pt;
+	margin-right: 0pt;
+	width: 100%;
+	filter: none;
+}
+	/* filter: glow(color=#006699, strength=4); */
+
+
+
+div.head-block {
+	margin-left: 12pt;
+}
+
+div.nav-group {
+	height: auto;
+}
+
+/* browse button set */
+div.browse {
+	float: none;
+	width: auto;
+	display: block;
+}
+
+/* browse button images */
+div.browse img {
+margin-left: auto;
+}
+
+/*   was like this...
+div.button-info {
+	text-align: right;
+	display: block;
+}
+*/
+
+/* browse button info - this is Patricia's temp solution */
+div.button-info {
+height: 15px;
+}
+
+
+/* browse button titles that display onmouseover */
+span#infoline {
+color: #FFFFFF;
+}
+
+/* bread crumbs */
+
+div.ancestry {
+margin-top: 8pt;
+margin-bottom: 8pt;
+}
+
+div.ancestry a {
+text-decoration: underline;
+}
+
+div.ancestry a:link {
+text-decoration: underline;
+}
+
+div.ancestry a:visited {
+text-decoration: underline;
+}
+
+
+
+
+div.bodyProcess {
+  background-color: #FFFFF4;
+  border: dashed;
+  border-color: #CC9;
+  border-width: 1px;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 0px;
+}
+
+div.bodyProcess h1 {
+	font-size: small;
+	font-weight: bold;
+}
+
+div.bodyProcess p {
+	font-weight: bold;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+}
+
+div.note-note span.label,
+div.note-tip span.label,
+div.note-important span.label,
+div.note-related span.label, 
+div.note-warning span.label {
+	color: #000000;
+}
+
+/****** change for VxF to have gray Notes  
+was  	background: #FFFFF4;
+  *******/
+
+/* commenting out for FBX
+div.note-note,
+div.note-tip,
+div.note-important,
+div.note-related,
+div.note-warning {
+	background: #eeeeaa;
+	border-style: dashed;
+	border-color: #CC9;
+	border-width: 1px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+} */
+
+
+
+}
+
+
+
+/* browse button images */
+div.browse img {
+margin-left: auto;
+/* added 2 April 08 Patricia to give nav icons breathing room */
+margin-right: 5px;
+}
+/* added 2 April 08 Patricia - takes out the separation in the middle of the nav button (were grouped 3 and 3) */
+span.home-button-separator {
+  display: none;
+}
+/* Added 2 April 08 Patricia - Giving breathing room for the zoom images */
+img.zoom {
+   margin: 0 5px 5px 0;
+}
+
+div.footer-block {display: none;}
+
+/* add for link color 2008/09/10 */
+
+a:link {color: 336699;}
+a:visited {color: 336699;}
+a:active {color: 336699;}
+a:hover {color: 336699;}

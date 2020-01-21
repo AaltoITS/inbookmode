@@ -1,0 +1,2464 @@
+/* isd.css                                                         v.02.18.05 03:45p  */
+/*                                                                                    */
+/* A concatenation of acmap.css and style.css by Bill C 01/23/2005                    */
+/*                                                                                    */
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/* Begin acmap.css                                                                    */
+/*                                                                                    */
+/**************************************************************************************/
+
+
+BODY
+{background-color: white;
+color: black;
+font-family: Verdana;
+font-size: 9pt;
+line-height: 12pt;
+margin-bottom: 3em;
+margin-left: 12pt;
+margin-right: 12pt;
+margin-top: 0pt;
+text-align: left;
+margin-bottom: 1200;    /* We need this extra space at the end of a topic so that */
+                        /* link targets that occur near the end of the topic will */
+                        /* be scrolled to.                                        */
+}
+
+/* Dialog box topics reformatted for conversion to CPM */
+
+/* Tab Heads */
+h1.tab {
+color: white;
+background-color: b76;
+padding: 12pt;
+padding-top: 4pt;
+padding-bottom: 5pt;
+width: 0;
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+line-height: 12pt;
+margin-bottom: 10pt;
+margin-top: 18pt;
+}
+
+/* Tab Section End - virtual head - not used */
+h1.end {
+color: #ccc;
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+line-height: 12pt;
+margin-bottom: 0pt;
+margin-top: 6pt
+}
+
+/* Widget Group Heads, top level, has sub-widgets */
+h2.group {
+color: #4d7;
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+line-height: 12pt;
+margin-bottom: 3pt;
+margin-top: 9pt
+margin-left: 20pt;
+}
+
+/* Widget Heads, top level, widget only, has no sub-widgets */
+h2.widget {
+color: #8be;
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+line-height: 10pt;
+margin-bottom: 0pt;
+margin-top: 6pt
+margin-left: 40pt;
+}
+
+/* Widget List End - virtual head */
+h2.end {
+color: #ccc;
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+line-height: 12pt;
+margin-bottom: 0pt;
+margin-top: 6pt
+margin-left: 20pt;
+}
+
+/* Widget Heads, sub-widget level */
+h3.widget {
+color: #0a0;
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+line-height: 10pt;
+margin-bottom: 0pt;
+margin-top: 6pt
+margin-left: 40pt;
+}
+
+/* Widget Group End - virtual head - not used? */
+h3.end {
+color: #ccc;
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+line-height: 10pt;
+margin-bottom: 0pt;
+margin-top: 6pt;
+margin-left: 40pt;
+}
+
+/* Widget Group Container */
+div.group {
+margin-top: 10pt;
+padding-left: 16pt;
+padding-right: 16pt;
+padding-top: 1pt;
+padding-bottom: 16pt;
+background-color: #dfc;
+}
+
+/* Widget UL, OL */
+
+ul.widget {
+margin-left: 12pt;
+}
+
+ol.widget {
+margin-left: 12pt;
+}
+
+div.group ul.widget {
+margin-left: 12pt;
+}
+
+div.group ol.widget {
+margin-left: 12pt;
+}
+
+div.group table.param {
+background-color: #def;
+}
+
+div.group table.basic {
+background-color: #def;
+}
+
+/* Uses a graphic background instead of color */
+H1.Image
+{background-color: #666699;
+background-image: url(graphics\head_graphic.gif);
+background-repeat: no-repeat}
+
+/* No background */
+H1.Plain
+{background-color: transparent;
+color: #330066;
+font-size: 12pt;
+font-weight: bold;
+margin-top: 14pt;
+margin-bottom: 14pt;
+padding-top: 0pt;
+padding-bottom: 0pt}
+
+/* Overlays a heading graphic. See P.HeadGraphic below. */
+H1.Overlay {
+background-color: transparent;
+color:#fff;
+}
+
+H1.Overlay2
+{background-color: transparent;
+color: #ffffff;
+font-size: 12pt;
+font-weight: bold;
+margin-top: 0pt;
+padding-top: 0pt;
+padding-bottom: 0pt}
+
+/* H4 is the first break head within a topic, also intro heading for list of links, such as "What do you want to do?" */
+
+H4
+{color: #827;
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+line-height: 13pt;
+margin-bottom: 3pt;
+margin-top: 12pt}
+
+H4.Related
+{color: #827;
+font-family: Verdana;
+font-size: 10pt;
+font-weight: bold;
+line-height: 18pt;
+margin-bottom: 3pt;
+margin-top: 25pt;
+border-top: 1pt #938 solid
+}
+
+/* Deleted 11/20/02 Bill C - no longer needed  */
+/* 
+H4.Guidepost
+{color: #666699;
+font-family: Papyrus,"Stylus BT","Comic Sans MS",Georgia;
+font-size: 20pt;
+font-weight: bold;
+line-height: 22pt;
+margin-bottom: 3pt;
+margin-top: 3pt;
+}
+*/
+
+H4.SyntaxFirst
+{color: #330066;
+font-family: "Courier New";
+font-size: 11pt;
+font-weight: bold;
+letter-spacing: 1pt;
+line-height: 11pt;
+margin-bottom: 0pt;
+margin-top: 12pt}
+
+H4.Syntax
+{color: #330066;
+font-family: "Courier New";
+font-size: 11pt;
+font-weight: bold;
+letter-spacing: 1pt;
+line-height: 11pt;
+margin-bottom: 0pt;
+margin-left: 24pt;
+margin-top: 0pt}
+
+/* H5 is the second-level heading within topics, also the procedure heading (intro heading for number lists). */
+
+H5
+{color: #038;
+font-family: Verdana;
+font-size: 8pt;
+font-weight: bold;
+line-height: 11pt;
+margin-bottom: 0pt;
+margin-top: 9pt}
+
+/* Body paragraphs */
+
+P
+{margin-bottom: 0pt;
+margin-top: 6pt}
+
+.Zero
+{margin-top: 0pt}
+
+.Twelve
+{margin-top: 12pt}
+
+.In
+{margin-left: 12pt}
+
+.ZeroIn
+{margin-left: 12pt;
+margin-top: 0pt}
+
+.In2
+{margin-left: 24pt}
+
+.In3
+{margin-left: 36pt}
+
+.ZeroIn2
+{margin-left: 24pt;
+margin-top: 0pt}
+
+.Prompt
+{margin-left: 12pt;
+color: #0000cc}
+
+/* Use P.CodeXX classes for a few lines of code inserted into a narrative flow. For sample code blocks longer than a few lines, use the Pre tag. */
+
+P.Code
+{font-family: "Courier New";
+font-size: 10pt;
+margin-top: 0pt}
+
+P.CodeFirst
+{font-family: "Courier New";
+font-size: 10pt}
+
+P.CodeIn
+{font-family: "Courier New";
+font-size: 10pt;
+margin-left: 12pt;
+margin-top: 0pt}
+
+P.CodeInFirst
+{font-family: "Courier New";
+font-size: 10pt;
+margin-left: 12pt}
+
+/* Special-purpose P classes */
+
+/* Copyright notices and the like. */
+P.SmallFont
+{font-size: 8pt;
+line-height: 10pt}
+
+/* Caption text for illustrations */
+P.FigureTitle {
+font-size: 8pt;
+font-style: italic;
+color: #000;
+line-height: 9pt;
+}
+
+/* Inset for Guideposts */
+P.Guidepost {
+font-size: 9pt;
+color: #038;
+line-height: 13pt;
+border-top: 2pt #038 solid;
+border-bottom: 2pt #038 solid;
+padding-top: 6pt;
+padding-bottom:6pt;
+margin-bottom: 15pt;
+margin-top: 10pt;
+}
+
+P.Toolbar {
+font-size: 9pt;
+padding-top:0pt;
+margin-top:0pt;
+}
+
+/* Concept example */
+P.example {
+font-size: 9pt;
+color: #000;
+/* background-color : #c6cfd0; */
+background-color : #77aacc;
+padding-top: 7pt;
+padding-bottom:7pt;
+padding-left:15pt;
+padding-right:15pt;
+margin-right: 0pt;
+margin-left: 0pt;
+}
+
+/* Tab labels in topic headings. To allow room for more characters, the font-size and line-height properties could be changed to 8pt and 11pt. */
+P.TabLabel
+{font-size: 9pt;
+line-height: 12pt;
+}
+
+/* Indent to align with text that is "bulleted" with the 11-pixel expanding text symbol, Plus11.gif or Minus11.gif */
+.In15
+{margin-left: 15pt}
+
+/* Positions a heading graphic. See H1.Overlay above. */
+P.HeadGraphic
+{margin-bottom: 15pt;
+margin-left: -12pt;
+margin-top: 0pt;
+margin-right: -25pt}
+
+/* Help author's notes. */
+P.Issue
+{color: #cc0000;
+margin-left: 24pt;
+margin-right: 48pt}
+
+/* Images */
+img {
+border: none;
+}
+
+/* Lists */
+
+UL
+{list-style-type: square;
+margin-bottom: 0pt;
+margin-left: 12pt;
+margin-top: 6pt}
+
+OL
+{margin-bottom: 0pt;
+margin-left: 18pt;
+margin-top: 6pt}
+
+LI
+{margin-bottom: 0pt;
+margin-top: 6pt}
+
+li.topiclist-litem {
+margin-top: 6pt;
+margin-bottom: 0;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+p.topiclist-litem {}
+
+HR
+{margin-bottom: 0pt;
+margin-top: 8pt}
+
+UL.guidepost
+{color: #038;
+list-style-type: disc;    
+margin-bottom: 0pt;
+margin-left: 12pt;
+margin-top: 6pt;
+
+}                       /* Note: Wrap guidepost bullet content in span.Guidepost  */
+
+OL.guidepost
+{color: #038;
+font-family: Papyrus,"CountryBlueprint","Stylus BT","Comic Sans MS",Georgia;
+font-size: 20pt;
+font-weight: bold;
+margin-bottom: 0pt;
+margin-left: 33px;      
+margin-top: 15pt;       
+padding-bottom: 13pt;   
+}                       /* Note: Wrap guidepost step content in p.gp  */
+
+span.Guidepost
+{color: black;
+font-family: Verdana;
+font-size: 9pt;
+font-weight: normal;
+}
+
+/* Added 11/20/02 Bill C                                                        */
+/* Selector p.gp replaces span.Guidepost, and handles the erratic line-spacing  */
+/* in <ol> <li> elements with 20pt numbering. Selector ol.Guidepost p enforces  */
+/* correct font in p tags within ol.Guidepost elements, which is now necessary. */
+ol.Guidepost p, p.gp {
+font-family: Verdana;
+color: black;
+font-size: 9pt;
+font-weight: normal;
+}
+
+p.gp:first-line {
+line-height: 20pt;
+}
+
+/* Added 11/20/02 Bill C                                                          */
+/* Manages space between <li> numbering and <li> content in ol.Guidepost elements */
+ol.Guidepost li {
+padding-left: 6pt;
+}
+
+
+/* Links */
+
+A
+{}
+
+A:link
+{color: #15c} /* #04b */
+
+A:visited
+{color: #15c}
+
+/* We are not using A:active or A:hover */
+
+A.Guidepost:link, A.Guidepost:visited
+{color: #038;
+font-family: Papyrus,"Comic Sans MS",Arial;}
+
+A.toolbar:link, A.toolbar:visited
+{color: white;
+font-family: "Comic Sans MS",Arial;}
+
+/* Deleted 11/20/02 Bill C                                           */
+/* NOTE incorrect syntax "A:Guidepost" - did you mean A.Guidepost?   */
+/* span.GPLink is no longer needed                                   */
+/* 
+A:Guidepost
+{color: #666699;
+font-family: Papyrus,"Comic Sans MS",Arial;}
+
+span.GPLink
+{color: #666699;
+font-family: Papyrus,"Comic Sans MS",Arial;
+font-size: 10pt;} 
+*/
+
+
+/* Tables */
+
+/* note: caption and table borders, th backgrounds:    */
+/* color is same hue as h4 color, but must be lighter  */
+/* and less saturated; for example h4 color #038 and   */
+/* th bkg #369                                         */
+
+CAPTION
+{border-top: 2pt #369 solid;
+color: #038;
+font-family: Verdana;
+font-size: 9pt;
+font-weight: bold;
+padding-bottom: 5pt;
+padding-left: 8pt;
+padding-right: 8pt;
+padding-top: 5pt;
+text-align: left}
+
+TABLE
+{background-color: #ffffff;
+color: black;
+cell-spacing: none;
+font-family: Verdana;
+font-size: 9pt;
+line-height: 12pt;
+margin-bottom: 10pt;
+margin-top: 10pt;
+text-align: left}
+
+TH
+{background-color: transparent;
+color: #027;
+font-size: 9pt;
+font-weight: bold;
+padding-bottom: 4pt;
+padding-left: 8pt;
+padding-right: 8pt;
+padding-top: 3pt;
+text-align: left}
+
+TABLE.Plain
+{background-color: transparent;
+color: black;
+border-bottom: none;
+font-family: Verdana;
+font-size: 9pt;
+line-height: 12pt;
+margin-bottom: 0pt;
+margin-top: 0pt;
+text-align: left}
+
+TABLE.Menu
+{background-color: transparent;
+color: black;
+border-bottom: none;
+cell-spacing: none;
+cell-padding: none;
+font-family: Verdana;
+font-size: 9pt;
+line-height: 12pt;
+margin-bottom: 0pt;
+margin-top: 12pt;
+margin-left: -8pt;
+text-align: left;
+vertical-align: baseline}
+
+TABLE.Links
+{background-color: transparent;
+color: black;
+border-bottom: none;
+cell-spacing: none;
+font-family: Verdana;
+font-size: 9pt;
+line-height: 12pt;
+margin-bottom: 0pt;
+margin-top: 0pt;
+}
+
+TABLE.Links TD
+{color:blue; 
+text-decoration:underline; 
+cursor:hand; 
+padding-top:0pt;
+padding-bottom:0pt;
+padding-right:0pt;
+text-align:right;
+width:40pt;
+}
+
+TABLE.Search
+{background-color: transparent;
+color: black;
+border-bottom: none;
+cell-spacing: none;
+font-family: Verdana;
+font-size: 9pt;
+line-height: 12pt;
+margin-bottom: 0pt;
+margin-top: 0pt;
+}
+
+TABLE.SearchList
+{bgcolor="#D6D5CB";
+color: black;
+border-bottom: none;
+cell-spacing: none;
+font-family: Verdana;
+font-size: 9pt;
+line-height: 20pt;
+margin-bottom: 2pt;
+margin-top: 20pt;
+padding-bottom: 4pt;
+padding-left: 8pt;
+padding-right: 8pt;
+padding-top: 3pt;
+}
+
+HL
+{bgcolor="#B7B896";
+color: #ffffff;
+font-family: Verdana;
+font-size: 8pt;
+font-weight: bold;
+padding-bottom: 4pt;
+padding-left: 8pt;
+padding-right: 8pt;
+padding-top: 3pt;
+text-align: left}
+
+TR
+{}
+
+TR.Alternate
+{background-color: #cccccc}
+
+TD
+{color: black;
+padding-bottom: 4pt;
+padding-left: 8pt;
+padding-right: 8pt;
+padding-top: 3pt;
+vertical-align: baseline}
+
+TD.Plain
+{color: black;
+padding-bottom: 0pt;
+padding-left: 0pt;
+padding-right: 0pt;
+padding-top: 0pt;
+vertical-align: baseline}
+
+/*
+table.plain td
+{color: black;
+padding-bottom: 0pt;
+padding-left: 0pt;
+padding-right: 0pt;
+padding-top: 0pt;
+vertical-align: baseline}
+*/
+
+TD.LastRow
+{font-size: 2pt;
+line-height: 2pt;
+padding-bottom: 0pt;
+padding-top: 0pt}
+
+/* Key names in mouseover table in ref topics */
+td.KeyName {
+text-align:left;
+cursor:default; 
+color:#33c;
+font-size:8pt;
+font-weight:bold;
+}
+
+/* Selected key names in mouseover table in ref topics */
+td.KeyNameSelect {
+text-align:left;
+cursor:default; 
+color:#6c3;
+font-size:8pt;
+font-weight:bold;
+}
+
+/* parameter table */
+
+table.param {
+font-size: 1em;
+line-height: 1.3em;
+margin-top: 0.5em;
+margin-bottom: 1.6em;
+border: none;
+}
+
+td.param-name {
+font-family: "Courier New";
+color: #049;
+font-size: 1.2em;
+padding-right: 2em;
+padding-left: 0;
+}
+
+td.param-desc { }
+
+table.notruledwide {
+border-bottom: none;
+}
+
+
+
+/* #@Tables */
+
+/* Character Formatting */
+
+STRONG
+{font-style: bold}
+
+EM
+{font-style: italic}
+
+SPAN
+{}
+
+SPAN.BookTitle
+{font-style: italic}
+
+SPAN.Code {
+font-family: "Courier New";
+font-size: 10pt;
+color: brown;
+}
+
+/* green code, for comments */
+span.comcode {
+font-family: "Courier New";
+font-size: 10pt;
+color: #080;
+}
+span.code-comment {
+font-family: "Courier New";
+font-size: 10pt;
+color: #080;
+}
+
+SPAN.Param
+{font-family: "Courier New";
+font-size: 10pt;
+font-style: italic}
+
+/* For inline and block popups */
+
+SPAN.PopLink
+{color: #00c;
+cursor: hand;
+text-decoration: underline}
+
+SPAN.PopText
+{cursor: hand;
+display: none}
+
+SPAN.InlineHead {
+color: #38c;
+font-size:8pt;
+font-weight:bold;
+}
+
+SPAN.MenuHead {
+color: #038;
+font-size:10pt;
+font-weight:bold;
+}
+
+SPAN.Note {
+color: #930;
+font-size:9pt;
+font-weight:bold;
+}
+
+SPAN.Tip {
+color: #930;
+font-size:9pt;
+font-weight:bold;
+}
+
+SPAN.Warning
+{color: #cc0000;
+font-size:9pt;
+font-weight: bold}
+
+span.note-label-important {
+color: #c00;
+font-size: 9pt;
+font-weight: bold;
+padding-right: 5px;
+}
+
+span.note-label-warning {
+color: #c00;
+font-size: 9pt;
+font-weight: bold;
+padding-right: 5px;
+}
+
+span.note-label-note {
+color: #027;
+font-size: 9pt;
+font-weight: bold;
+padding-right: 5px;
+}
+
+span.note-label-tip {
+color: #027;
+font-size: 9pt;
+font-weight: bold;
+padding-right: 5px;
+}
+
+span.note-label-related {
+color: #027;
+font-size: 9pt;
+font-weight: bold;
+padding-right: 5px;
+}
+
+SPAN.Issue
+{color: #cc0000}
+
+/* Cited characters, as in... 
+How do you spell <span class="CiteCh">cat</span>? */
+span.CiteCh {
+font-style:italic;
+}
+/* Text you enter, as in...
+Enter <span class="EnterCh">ADEQUERY</span> at the command line. */
+span.EnterCh {
+font-weight:bold;
+}
+
+/* For tab labels in topic headings, the selected tab */
+span.CurTab {
+width:70pt; 
+color:#306; 
+font-weight:bold;
+text-align:center; 
+cursor:default;
+}
+
+/* For tab labels in topic headings, a selectable tab. */
+span.Tab {
+width:69pt; 
+text-align:center;
+cursor:hand;
+}
+
+span.related {
+color: #027;
+font-weight: bold;
+}
+
+span.see-also {
+color: #027;
+font-weight: bold;
+}
+
+/* Glossary link         */
+span.define_head a:link {
+color: #286;
+}
+
+/* Glossary link, visited */
+span.define_head a:visited {
+color: #286;
+}
+
+/* menu-item separator arrow image */
+span.override img {
+position: relative;
+top: 1;
+left: 1;
+}
+
+/* #@span */
+
+/* DIV */
+
+div {}
+
+DIV.HeadingOverlay
+{position:absolute; 
+left:13pt; 
+top:6pt; 
+width:700pt;
+}
+
+DIV.HeadingOverlay2
+{position:absolute; 
+left:13pt; 
+top:0pt;
+width:700pt;
+Filter: DropShadow(Color=#000000, OffX=1, OffY=1, Positive=1);
+}
+
+
+/* For tab labels in 3-tab topic headings, the tab set */
+div.TabOverlay {
+position:absolute; 
+left:14pt; 
+top:38pt;
+width:700pt;
+color:white;
+}
+
+/* For tab labels in 3-tab topic headings, individual tabs */
+div.Tab1 {
+position:absolute;
+width:70pt;
+top:6pt;
+left:0pt;
+}
+
+div.Tab2 {
+position:absolute;
+width:70pt;
+top:6pt;
+left:72pt;
+}
+
+div.Tab3 {
+position:absolute;
+width:70pt;
+top:6pt;
+left:144pt;
+}
+
+/* mouseover table in ref topics */
+div.KeyList {
+position:absolute;
+left:5pt;
+top:100pt;
+}
+
+/* ref data table in ref topics */
+div.KeyData {
+position:absolute;
+left:30%;
+top:100pt;
+width:72%;
+}
+
+/* For inline popup blocks */
+Div.Popup {
+display:none; 
+cursor:hand; 
+background-color:#fc9; 
+width:90%; 
+margin-left:12pt; 
+margin-top:8pt; 
+padding-left:4pt; 
+padding-top:1pt; 
+padding-bottom:4pt;
+}
+
+div.figure_anchor {
+margin-top: 10pt;
+}
+
+div.figure_title {
+margin-top: 3pt;
+font-size: 9pt;
+line-height: 12pt;
+color: #15a;
+font-weight: normal;
+}
+
+div.heading_3_notoc {
+margin-top: 10pt;
+margin-bottom: 5pt;
+font-size: 10pt;
+font-weight: bold;
+color: #027;
+}
+
+div.chapter-summary {
+padding-bottom: 0;
+margin-bottom: 0;
+}
+
+div.body_process {}
+
+div.topic-list {
+padding-top: 0;
+margin-top: 0;
+padding-bottom: 0;
+margin-bottom: 0;
+}
+
+div.topic-list h4.related {
+margin-top: 10pt;
+margin-bottom: 5pt;
+font-size: 10pt;
+font-weight: bold;
+color: #027;
+border: none;
+}
+
+div.warning {
+margin-top: 6pt;
+}
+
+div.note {
+margin-top: 6pt;
+}
+
+div.tip {
+margin-top: 6pt;
+}
+
+div.important {
+margin-top: 6pt;
+}
+
+div.note-label-related {
+margin-top: 6pt;
+}
+
+div.related {
+   margin-top: 10pt;
+   margin-bottom: 5pt;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #027;
+   border-top: 1 solid #027;
+}
+
+div.see-also {
+margin-top: 18pt;
+padding-top: 2pt;
+border-top: 1 solid #249;
+}
+
+/* #@div */
+
+/* space-formatted code blocks */
+pre {
+font-family: "Courier New";
+font-size: 1em;
+margin-top: 8pt;
+margin-bottom: 0pt;
+padding-top: 6pt;
+padding-bottom: 8pt;
+padding-left: 8pt;
+padding-right: 8pt;
+background-color: #bcd;
+}
+
+
+/************************************************/
+/* Comments link                                */
+/*                                              */
+/************************************************/
+
+TABLE.FooterTable 
+	{ background: url(ac.mainback.gif); 
+	border-top: 1px #003399 solid; border-bottom: 2px #003399 solid;
+	margin-top: 25pt; margin-bottom: 20pt; height: 25pt; }
+
+SPAN.FooterLink   
+	{ font-size: 7pt; color: #003399; text-decoration: underline; cursor: hand }
+
+X.CommentsLink { font-size: 7pt; color: #003399; text-decoration: underline; cursor: hand }
+X.FooterLink   { font-size: 7pt; color: #003399; text-decoration: underline; cursor: hand }
+
+/* footer table border */
+table.FooterTable {
+	border-color: #768;
+}
+
+/* footer table link text (asks user comments) */
+span.CommentsLink 
+{
+font-size: 8pt;
+color: #027;
+}
+
+
+/************************************************/
+/* Topic heading elements                       */
+/*                                              */
+/************************************************/
+
+/* head region */
+div.head {
+background-image: url(../images/head_graphic.gif);
+/* background-repeat: repeat-y; */
+margin-left: -12pt;
+margin-right: -12pt;
+margin-top: 0pt;
+margin-bottom: 0pt;
+}
+
+@media print {
+
+div.head {
+background-image: none;
+}
+
+} /* @media print */
+
+/* head block - sets head region margins */
+div.head-block {
+margin-left: 12pt;
+margin-right: 12pt;
+padding-top: 4pt;
+}
+
+/* nav group - aw search and browse buttons */
+div.nav-group {
+position: relative;
+height: 0;
+padding-left: 1;
+}
+
+@media print {
+
+div.nav-group {
+	display: none;
+}
+
+} /* @media print */
+
+/* ask-me stuff */
+form.ask-me {
+width: 275;
+padding-top: 0;
+padding-bottom: 0;
+margin-top: 0;
+margin-bottom: 0;
+height: 0;
+float: left;
+}
+
+input.ask-me-image {
+cursor: hand;
+margin-bottom: 2pt;
+margin-top: 2pt;
+height: 21;
+}
+
+input.ask-me-text {
+padding-left: 5;
+width: 160pt;
+padding-top: 1pt;
+height: 23;
+margin-bottom: 2pt;
+}
+
+/* browse button set */
+div.browse {
+position: relative;
+padding: 0;
+text-align: right;
+width: 0;
+margin-top: 2;
+float: right;
+}
+
+/* browse button info */
+div.button-info {
+text-align: right;
+}
+
+span#infoline {
+padding-right: 0;
+padding-top: 2;
+padding-bottom: 2;
+font-size: 9pt;
+visibility: hidden;
+color: white;
+width: 0;
+text-align: right;
+/* filter: glow(color=#006699, strength=4); */
+/* filter: dropshadow(color=#333333, offx=1, offy=1, positive=1); */
+}
+
+/* head-text region */
+div.head-text {
+padding-top: 6pt;
+padding-bottom: 6pt;
+}
+
+/* head-text */
+div.head-text span {
+color: #fff;
+font-size: 14pt;
+line-height: 1.2em;
+padding-left: 4pt;
+margin-left: -4pt;
+padding-bottom: 6pt;
+width: 100%;
+/* filter: glow(color=#006699, strength=4); */
+/* filter: dropshadow(color=#333333, offx=1, offy=1, positive=1); */
+}
+
+@media print {
+
+div.head-text span {
+font-size: 18pt;
+color: #666;
+filter: glow-off; 
+}
+
+} /* @media print */
+
+/* head-links region */
+div.head-links {
+padding-top: 0pt;
+padding-bottom: 0pt;
+}
+
+/* head-links table */
+div.head-links table {
+font-size: 9pt;
+line-height: 1em;
+color: white;
+margin-top: 0pt;
+margin-bottom: 0pt;
+margin-left: -3pt;
+background: transparent;
+border: none;
+}
+
+/* head-links row */
+div.head-links tr {
+vertical-align: middle;
+}
+
+/* head-link cells */
+div.head-links td {
+vertical-align: middle;
+padding-top: 0pt;
+padding-bottom: 0pt;
+}
+
+/* head-link cells, left group */
+td.head-links-left {
+padding-left: 0pt;
+padding-right: 0.6em;
+text-align: left;
+}
+
+/* head-link cells, separator */
+td.head-links-sept {
+width: 100%;
+}
+
+/* head-link cells, right group */
+td.head-links-right {
+padding-left: 0.6em;
+padding-right: 0pt;
+text-align: right;
+}
+
+/* head link text */
+div.head-links span {
+padding-left: 3pt;
+padding-right: 3pt;
+padding-top: 0pt;
+padding-bottom: 5pt;
+width: 100%;
+/* filter: glow(color=#006699, strength=4); */
+/* filter: dropshadow(color=#333333, offx=1, offy=1, positive=1); */
+}
+
+/* head links */
+/* a.popuplk_head { */
+div.head-links a {
+color: #fff;
+cursor: hand;
+}
+
+/* head links visited */
+/* a.popuplk_head:visited { */
+div.head-links a:visited {
+color: #fff;
+cursor: hand;
+}
+
+/* head tabs */
+div.head-tabs {
+}
+
+/* head-tab table */
+div.head-tabs table {
+font-size: 9pt;
+color: white;
+margin-top: 0pt;
+margin-bottom: 0pt;
+background: transparent;
+border: none;
+}
+
+/* head-tab row */
+div.head-tabs tr {
+vertical-align: middle;
+}
+
+@media print {
+
+div.head-tabs tr {
+position: relative;
+left: -2px;
+}
+
+}
+
+/* head-tab sides */
+td.tab-edge {
+padding: 0px;
+}
+
+@media print {
+
+td.tab-edge {
+visibility: hidden;
+}
+
+} /* @media print */
+
+/* head-tab bodies */
+td.tab {
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 0px;
+padding-bottom: 0px;
+background-image: url(../images/tab-bkg.gif);
+cursor: hand;
+vertical-align: middle;
+}
+
+@media print {
+
+td.tab {
+border: 2 solid #999;
+background-image: none;
+}
+
+} /* @media print */
+
+/* head-tab bodies, selected */
+td.tab-x {
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 0px;
+padding-bottom: 0px;
+background-image: url(../images/tab-bkg-x.gif);
+cursor: default;
+vertical-align: middle;
+}
+
+@media print {
+
+td.tab-x {
+border: 2 solid #038;
+background-image: none;
+}
+
+} /* @media print */
+
+/* head-tab bodies, dimmed */
+td.tab-o {
+padding-left: 1em;
+padding-right: 1em;
+padding-top: 0px;
+padding-bottom: 0px;
+background-image: url(../images/tab-bkg-o.gif);
+cursor: default;
+vertical-align: middle;
+}
+
+/* head-tab text */
+td.tab span {
+color: white;
+width: 100%;
+/* filter: glow(color=#006699, strength=4); */
+padding: 0px;
+/* filter: dropshadow(color=#333333, offx=1, offy=1, positive=1); */
+}
+
+@media print {
+
+td.tab span {
+color: #999;
+}
+
+}
+
+/* head-tab text, selected */
+td.tab-x span {
+color: #027;
+font-weight: bold;
+padding: 0px;
+position: relative;
+top: 0px;
+}
+
+/* head-tab text, dimmed */
+td.tab-o span {
+width: 100%;
+color: #666;
+position: relative;
+top: 0px;
+visibility: hidden;
+}
+
+/* head-region bottom margin */
+div.head-margin {
+line-height: 0pt;
+padding-bottom: 6pt;
+}
+
+
+/************************************************/
+/* Dialog topic elements*/
+/*                                              */
+/************************************************/
+
+/* Topic heading positioner */
+div.HeadingOverlay {
+position:absolute; 
+left:13pt; 
+top:8pt; 
+width:700pt;
+}
+/* Topic heading positioner for two-line heads */
+div.HeadingOverlayWrap {
+position:absolute; 
+left:13pt; 
+top:3pt; 
+width:700pt;
+}
+/* Dynamic dialog box areas  */
+div.DialogAreaHead {
+width:13em;
+}
+h4.DialogArea {
+cursor:hand;
+line-height:10pt;
+margin-top:0pt;
+margin-bottom:1pt;
+margin-left:2em;
+text-indent:-2em;
+}
+div.DialogAreaContent {
+display:none;
+position:relative;
+left:0em;
+margin-right:10pt;
+margin-bottom: 6pt;
+}
+/* Dynamic dialog box controls  */
+div.DialogGroup {
+position:relative;
+padding-top:3pt;
+padding-bottom:6pt;
+padding-left:11pt;
+margin-top:8pt;
+background-color:#cff;
+width:292pt;
+}
+div.DialogControlHead {
+cursor:default;
+width:13em;
+}
+h5.DialogControl {
+cursor:default;
+line-height:8pt;
+margin-top:0pt;
+margin-bottom:2pt;
+margin-left:1em;
+text-indent:-1em;
+}
+h5.DialogControlFirst {
+cursor:default;
+color:#39f;
+line-height:8pt;
+margin-top:2pt;
+margin-bottom:2pt;
+text-decoration:underline;
+margin-left:1em; 
+text-indent:-1em;
+}
+div.DialogControlContent {
+visibility:hidden; 
+position:absolute; 
+left:15em; 
+top:7pt;
+width:145pt;
+background-color:#9cf;
+padding-top:3pt;
+padding-bottom:6pt;
+padding-left:5pt;
+padding-right:5pt;
+}
+div.DialogControlContentFirst {
+visibility:visible; 
+position:absolute; 
+left:15em; 
+top:7pt;
+width:145pt;
+background-color:#9cf;
+padding-top:3pt;
+padding-bottom:6pt;
+padding-left:5pt;
+padding-right:5pt;
+}
+p.DialogControlText {
+font-size:8pt;
+line-height:10pt;
+margin-top:3pt;
+}
+ul.DialogControlText {
+margin-top:3pt;
+}
+li.DialogControlText {
+font-size:8pt;
+line-height:10pt;
+margin-top:3pt;
+}
+/* Displaying a dialog's summary description that was 
+drawn from a data source */
+td.SummaryDescription {
+padding-left:0pt;
+}
+/* Static Dialog box controls  */
+/* Inline head for first dialog para */
+span.DialogControlHead {
+color: #38c;
+font-size:8pt;
+font-weight:bold;
+}
+/* First dialog para */
+p.DialogControl {
+margin-left:12pt;
+text-indent:-12pt;
+}
+/* Subsequent dialog paras  */
+p.DialogControlNext {
+margin-left:12pt;
+}
+ul.DialogControl {}
+li.DialogControl {}
+
+
+/************************************************/
+/* Ref topic elements                           */
+/*                                              */
+/************************************************/
+
+/* ref page, layout table */
+table.ref-page-layout {
+background-color: transparent;
+color: black;
+border-bottom: none;
+font-family: Verdana;
+font-size: 9pt;
+line-height: 12pt;
+margin-bottom: 0pt;
+margin-top: 16pt;
+text-align: left
+}
+
+/* ref page, left column */
+table.ref-page-layout td.left {
+padding: 0;
+border-bottom: 3 #fa6 solid;
+vertical-align: top;
+}
+
+@media print {
+
+table.ref-page-layout td.left {
+border-bottom: 2 #fa6 solid;
+}
+
+}
+
+/* ref page, right column */
+table.ref-page-layout td.right {
+padding: 0;
+width: 100%;
+border-bottom: 3 #47b solid;
+vertical-align: top;
+background-color: #ffffff;
+}
+
+@media print {
+
+table.ref-page-layout td.right {
+border-bottom: 2 #47b solid;
+}
+
+}
+
+/* link list block */
+div#LinkList {
+margin-top: 6pt;
+margin-bottom: 6pt;
+padding-right: 10pt;
+}
+
+/* link list intro */
+p.link-list-intro {
+background-color: #fa6;
+color: #733; 
+padding-left: 7pt;
+padding-right: 8pt;
+padding-top: 3pt;
+padding-bottom: 4pt;
+margin-top: 0pt;
+margin-left: 0pt;
+font-size: 8pt
+}
+
+@media print {
+
+p.link-list-intro {
+border: 2 solid #fa6;
+background-color: transparent;
+}
+
+}
+
+/* link list element */
+p.ref-key {
+font-size: 8pt;
+line-height: 9pt;
+margin-top: 2pt;
+margin-left: 2em;
+text-indent: -2em;
+cursor: default;
+color: #57b;
+}
+
+/* data table */
+/* also used in dialog box topics */
+table.ref-data {
+margin-top: 0;
+margin-bottom: 0;
+width: 100%;
+border: none;
+font-size: 9pt;
+}
+
+/* data table td */
+table.ref-data td {
+padding-left: 0;
+padding-bottom: 12pt;
+}
+
+/* data table tr */
+table.ref-data tr {
+/* vertical-align: baseline; */
+}
+
+/* container for table.ref-data elements */
+table.ref-data-group {
+padding: 0;
+}
+
+/* container for table.ref-data elements */
+td.ref-data-group {
+padding: 0;
+}
+
+div.define_text, p.define_text {
+margin-top: 0pt;
+margin-bottom: 4pt;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+/* data table, field title */
+td.ref-field {
+background-color: transparent;
+color: #027;
+font-size: 8pt;
+font-weight: bold;
+padding-top: 5pt;
+padding-bottom: 5pt;
+padding-left: 0;
+padding-right: 10;
+}
+
+@media print {
+
+td.ref-field {
+padding-top: 5pt;
+border: none;
+}
+
+}
+
+/* data table, first field title */
+td.ref-field-1 {
+background-color: #36a;
+color: white;
+font-size: 8pt;
+font-weight: bold;
+padding-bottom: 5pt;
+}
+
+/* data table, field value */
+td.ref-value {
+font-size: 9pt;
+padding-top: 5pt;
+padding-bottom: 5pt;
+padding-left: 0;
+}
+
+/* data table, image in a field-value (e.g., tb icon on ref topic) */
+td.ref-value img {
+margin-top: 2;
+position: relative;
+top: 1;
+}
+
+/* data table, note div in a field value */
+td.ref-value div.note-note {
+margin-top: 0;
+padding-top: 0;
+margin-bottom: 4pt;
+padding-bottom: 0;
+}
+
+/* data table, bullet para in a field value */
+td.ref-value li.bullet_1 {
+margin-top: 0;
+padding-top: 0;
+margin-bottom: 4pt;
+padding-bottom: 0;
+}
+
+/* data table, image in a field-name (e.g., tb icon in db topic) */
+td.ref-field img {
+/* float: left;
+margin-right: 10;    Works, or would work if <object> element wasn't 
+there, but looks terrible. Can we set line-over-line instead of side- 
+by-side? */
+}
+
+
+/************************************************/
+/* Styles for printing                          */
+/*                                              */
+/************************************************/
+
+@media print {
+
+
+} /* @media print */
+
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/* Begin style.css                                                                    */
+/*                                                                                    */
+/**************************************************************************************/
+
+
+/**************************************************************************************/
+/* heading/banner style definitions                                                   */
+/**************************************************************************************/
+DIV.HeadingDiv  /* wraps the entire heading/banner area */
+{
+	margin-left:-16;
+	margin-right:-16;
+	margin-top:-10;
+	margin-bottom:14;
+	background-image:url(../images/ac-headbanner.gif);
+	background-repeat:no-repeat;
+}
+
+TABLE.HeadingTable /* inside the HeadingDiv */
+{
+	margin-right:-10;
+	width:103%; background-color: transparent;
+}
+
+/**************************************************************************************/
+/* tables                                                                             */
+/**************************************************************************************/
+/**** Tab definitions ****/
+/**** I tried adding the following attributes tot he Table and DIV styles but the dropshadow effected the table cells as well:
+filter:dropshadow(color=#000000,OffX=1,OffY=2,Positive=1)   ****/
+TABLE.TabTable 	/* table that holds the tabs */
+{
+	background:transparent
+}
+
+TD.TabOnCell 	/* "selected" tab */
+{
+	width:80;
+	text-align:center;
+	background:url(../images/ac.TabOn2.gif);
+}
+
+TD.TabOffCell 	/* "unselected" tab */
+{
+	width:80;
+	text-align:center;
+	background:url(../images/ac.TabOff2.gif);
+}
+
+TD.TabGreyCell 	/* "unavailable" tab */
+{
+	width:80;
+	text-align:center;
+	background:url(../images/ac.TabGrey2.gif);
+}
+
+DIV.TabOn 	/* formatting of "selected" tab label */
+{
+	font-size: 8pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+DIV.TabOff 	/* formatting of "unselected" tab label */
+{
+	font-size: 8pt;
+	font-weight: bold;
+	text-decoration: none;
+	filter:dropshadow(color=#000000,OffX=2,OffY=3,Positive=1);
+}
+
+DIV.TabGrey 	/* formatting of "unavailable" tab label */
+{
+	font-size: 8pt;
+	font-weight: bold;
+	color: Gray;
+	text-decoration: none;
+	filter:dropshadow(color=#000000,OffX=2,OffY=3,Positive=1);
+}
+
+TD.InfoLine 	/* browse button info text */
+{
+	font-size: 7pt;
+	visibility: hidden;
+	color: white;
+	line-height: 7pt;
+}
+
+TABLE.HeadNavTable
+{
+	background-color: transparent;
+}
+
+TD.NavGif	/* formats the cells that hold the browse buttons and info text */
+{
+	padding:1;
+	align:center
+}
+SPAN.BookTitleLink  /* formats the TOPSTYLEn text (see USERMACROS.TXT) */
+{
+	color:#ffffff;
+	font-weight:normal;
+	font-style:italic;
+	font-family: arial,helvetica;
+	font-size:8pt;
+	text-decoration: none;
+}
+
+/**** Heading ****/
+DIV.TopHead 	/* heading text */
+{
+	margin-left: 10pt;
+	line-height: 18pt;
+	width:95%;
+	color: white;
+	font-size: 14pt;
+	Filter: DropShadow(Color=#000000, OffX=2, OffY=1, Positive=1, Enabled=true);
+}
+
+/**** Top portion of banner (nav area) ****/
+DIV.BookTitle 	/* formats the TOPSTYLEn text (see USERMACROS.TXT) */
+{
+	padding-left:10pt;
+	padding-top:5pt;
+	line-height: 8pt;
+}
+
+TD.BookTitleCell  /* formats the TOPSTYLEn cell */
+	{
+	width: 50%
+}
+
+A.nohref
+{
+	text-decoration: none;
+	cursor: default;
+}
+
+.note-Note, .note-Warning, .note-Tip, .note-Related, .note-Important
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.note-label-Warning
+{
+	font-weight: bold;
+	color: #FF0000;
+	padding-right: 5px;
+}
+
+.table-title
+{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-size: large;
+}
+
+.topic-group, .section
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+h3.section-title
+{
+	font-size: 10pt;
+   margin-top: 10pt;
+	margin-bottom: 5pt;
+	font-weight: bold;
+	color: #027;
+}
+
+.topic-group-summary
+{
+
+}
+.chapter-summary
+{
+
+}
+
+h3.list-intro
+{
+	font-size: 10pt;
+   margin-top: 14pt;
+	margin-bottom: 5pt;
+	font-weight: bold;
+	color: #027;
+}
+
+h3.list_intro
+{
+	font-size: 10pt;
+   margin-top: 14pt;
+	margin-bottom: 5pt;
+	font-weight: bold;
+	color: #027;
+}
+
+.emphasis-strong
+{
+	font-weight: bold;
+}
+
+.concept, .quick-reference, .procedure
+{
+}
+
+.quick-reference-list
+{
+}
+
+.art
+{
+}
+
+.tab
+{
+	background-color: grey;
+	color: blue;
+}
+
+.selected-tab
+{
+	background-color: white;
+	color: black;
+}
+
+.code-block
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 15px;
+}
+
+.code-line, .prompt
+{
+    font-family:"Courier New", Courier, monospace;
+    font-size: 10pt;
+}
+
+.blurb
+{
+}
+
+.topic-list, .see-also-list
+{
+	padding-top: 5pt;
+	padding-bottom: 5pt;
+}
+
+H1
+{
+	font-size: 11pt;
+	font-weight: bold;
+	color: #003399;
+}
+
+H2, H3
+{
+   margin-top: 14pt;
+   margin-bottom: 5pt;
+	font-size: 10pt;
+	font-weight: bold;
+	color: #027;   /* cf #049 in arx dev */
+}
+
+H4
+{
+   font-size: 10pt;
+   font-weight: bold;
+   color: #cfc;
+   margin-top: 14pt;
+	margin-bottom: 5pt;
+}
+
+DIV.procedure-list
+{
+	font-size: 8pt;
+	margin-top: 15pt;
+	margin-bottom: 4pt
+}
+
+.procedure-list-item
+{
+	font-size: 9pt;
+	margin-top: 5pt;
+	margin-bottom: 4pt
+}
+
+OL.procedure-list
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+
+.procedure-litem, .topiclist-litem
+{
+    margin-bottom: 6pt;
+}
+
+.term, .qrentry-term
+{
+	margin-top: 2pt;
+	margin-bottom: 2pt;
+	font-size: 9pt;
+	text-align: left;
+	font-weight: bold;
+	color: #003366;
+}
+
+.definition, .qrentry-definition
+{
+	padding-top: 2pt;
+	padding-bottom: 2pt;
+	font-size: 9pt;
+}
+
+.rqsection-leadin
+{
+	font-size: 8pt;
+	font-weight: bold;
+	color: #990000;
+}
+.rqsection-leadin H3
+{
+	margin-bottom:10px;
+}
+
+.rqsection-leadin P
+{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.qrentry-tablerow
+{
+}
+
+.qrsection
+{
+}
+
+DIV.CPMTable TR
+{
+    vertical-align:top;
+}
+
+DIV.CPMTable TD, DIV.CPMTable TH
+{
+    padding: 5px;
+}
+
+TABLE.Ruled, TABLE.RuledWide
+{
+    border-top: 1 solid #249;
+    border-bottom: 2 solid #249;
+}
+
+TABLE.Ruled TH, TABLE.RuledWide TH
+{
+    border-top: 1 solid #249;    /* cf 48b in table.basic in arx dev */
+    border-bottom: 1 solid #249; /* cf 48b in table.basic in arx dev */
+    padding-bottom: 6pt;
+}
+
+TABLE.Ruled TD, TABLE.RuledWide TD
+{
+    border-top: 1 solid #249;    /* cf 48b in table.basic in arx dev */
+    padding-bottom: 6pt;
+}
+
+TR.RuledHeading, TR.RuledWideHeading
+{
+    background-color: transparent;
+}
+
+TR.RuledEvenRow, TR.RuledWideEvenRow
+{
+    background-color: transparent;
+}
+
+TR.RuledOddRow, TR.RuledWideOddRow
+{
+    background-color: transparent;
+}
+
+DIV.FooterDiv {
+	margin-top: 25pt;
+	margin-bottom: 20pt;
+	background-image:url(../images/ac.mainback.gif);
+	border-top: 2px #249 solid;
+	border-bottom: 2px #249 solid;
+	text-align : right;
+	padding-right: 0px;
+	padding-top: 8px;
+	padding-bottom: 14px;
+   display: block;
+}
+
+UL {
+	list-style : disc;
+}
+
+UL {
+    margin-left: 13pt;
+}
+
+.heading_3_notoc {
+    font-size: 10pt; font-weight: bold; color: #333399
+}
+
+.list-note {
+    margin-top: 7pt;
+    margin-bottom: 9pt;
+}
+
+.char_italic {
+    font-style: italic;
+}
+
+.qrEntryHeadTitle, .qrEntryTitle, .qrTitle
+{
+    font-size:9pt;
+    padding: 3pt 2pt 3pt 2pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+}
+
+.qrEntryHeadTitle, .qrEntryTitle
+{
+    font-weight:bold;
+    color:white;
+ }
+
+.qrEntryHeadTitle, .qrEntryTitle, .qrEntryValue
+{
+   padding-left: 7pt;
+}
+
+.qrEntryValue
+{
+    font-size:9pt;
+}
+
+.qrItemLink
+{
+    color: #333399;
+    text-decoration:none;
+}
+
+.qrEntryHeadTitle
+{
+    background-color: #3366AA;
+}
+
+.qrEntryTitle
+{
+    background-color: #6699CC;
+}
+.qrTitle
+{
+    color:#993333;
+    background-color: #FFAA66;
+    vertical-align: middle;
+    text-align : center;
+}
+
+
+div.qrItem
+{
+}
+
+hr.qr_line1
+{
+    height:3px;
+    color:#FFAA66;
+}
+
+hr.qr_line2
+{
+    height:3px;
+    color:#3366AA;
+}
+
+/* Concept example */
+P.example {
+font-size: 9pt;
+color: #000;
+background-color : #77aacc;
+padding-top: 7pt;
+padding-bottom:7pt;
+padding-left:15pt;
+padding-right:15pt;
+margin-right: 0pt;
+margin-left: 0pt;
+}
+
+table.void {
+}
+
+DT
+{
+color: #038;
+font-size:10pt;
+font-weight:bold;
+padding-top: 12pt;
+padding-bottom: 0pt;
+}
+
+DL
+{
+}
+
+SPAN.UIString_MenuText
+{
+}
+
+SPAN.UIString_CommandName
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_DialogCaption
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_PromptMessage
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_KeyboardEntry
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_KeyCaps
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_EntryField
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_Unspecified
+{
+    font-style: normal;
+    font-weight: normal;
+}
+
+SPAN.CharSpan_Emphasis
+{
+    font-style: italic;
+    font-weight: normal;
+}
+SPAN.CharSpan_Strong
+{
+    font-style: normal;
+    font-weight: bold;
+}
+SPAN.CharSpan_Special
+{
+    font-style: normal;
+    font-weight: normal;
+}
+
+SPAN.CharSpan_KeyboardEntry
+{
+}
+
+span.char_italic {
+    font-style: italic;
+    font-weight: normal;
+}
+
+span.sans_bold {
+    font-style: normal;
+    font-weight: bold;
+}
+
+DIV.comments
+{
+	font-weight: bold;
+	color: red;
+}
+
+object
+{
+height: 0;
+width: 0;
+}
+
+/* collapsable content */
+
+div.collapsable {
+   margin-top: 10pt;
+	margin-bottom: 5pt;
+}
+
+img.collapsable {
+cursor: hand;
+}
+
+div.collapsable_section {
+}
+
+span.collapsable_section_title { 
+   color: #027;
+	font-family: Verdana;
+	font-size: 10pt;
+	font-weight: bold;
+   padding-left: 5;
+   cursor: hand;
+}
+
+/* dangermond ref topic */
+
+div.qrtitle {
+display: none;
+}
+
+a.qritemlink {
+display: none;
+}
+
+table.ref-data td {
+width: 0;
+}
+
+table.ref-data {
+border: none;
+}
+
+hr.qr_line1 {
+display: none;
+}
+
+hr.qr_line2 {
+display: none;
+margin-top: 0;
+}
+
+div.qritem {
+margin-top: 12;
+margin-bottom: 12;
+}
+
+div.qrentryheadtitle {
+margin-bottom: 10;
+}
+
+@media print {
+
+div.qrentryheadtitle {
+border-top: 2 solid #038;
+border-bottom: 2 solid #038;
+color: #038;
+padding-left: 0;
+}
+
+} /* @media print */
+
+div.qrentrytitle {
+background-color: transparent;
+color: #027;
+font-size: 9pt;
+padding-left: 0;
+padding-bottom: 0;
+margin-bottom: 0;
+margin-top: 3;
+}
+
+div.qrentryvalue {
+padding-left: 0;
+padding-top: 1;
+margin-top: 0;
+}
+
+div.qrentryvalue img.qricon {
+margin-top: 4;
+}
+
+

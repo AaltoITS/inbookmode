@@ -1,0 +1,102 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+      <title>What’s not supported by COLLADA</title>
+      <link rel="stylesheet" type="text/css" href="./../style/cpm.css">
+      <link rel="stylesheet" type="text/css" href="./../style/isd.css">
+      <link rel="stylesheet" type="text/css" href="./../style/commons.css">
+      <link rel="stylesheet" type="text/css" href="./../style/contents.css">
+      <link rel="stylesheet" type="text/css" href="./../style/header.css">
+      <link rel="stylesheet" type="text/css" href="./../style/indexes.css">
+      <link rel="stylesheet" type="text/css" href="./../style/search.css">
+      <link rel="stylesheet" type="text/css" href="./../style/med.css"><script type="text/javascript" src="./../scripts/ac.strings.js"></script><script type="text/javascript" src="./../scripts/ac_common.js"></script><script type="text/javascript" src="./../scripts/acmap.js"></script><script type="text/javascript" src="./../scripts/ac.acad_ak.js"></script><script type="text/javascript" src="./../scripts/highlight.js"></script><script type="text/javascript" src="./../scripts/commons-processing.js"></script><script type="text/javascript" src="./../scripts/ac.acad_ak.js"></script><script language="javascript">
+            function hideInfo() {
+                info = document.getElementById('infoline');
+                info.innerHTML = ' ';
+                info.style.visibility = 'hidden';
+            }
+            function showInfo(title) {
+                info = document.getElementById('infoline');
+                info.innerHTML = title;
+                info.style.visibility='visible';
+            }
+        </script><meta name="description" content="What’s not supported by COLLADA">
+      <meta name="keywords" content="">
+      <meta name="topic-type" content="concept">
+   </head>
+   <body height="100%" onLoad="javascript:initFrame('WS73099cc142f48755-7b21313411809411ae9-67ac.htm','d0e922','index.html'); javascript:initPage('What’s not supported by COLLADA','Autodesk FBX Converter Help'); javascript:convSymbols()">
+      <!--
+                            Name = Topic;
+                            Class =  CPM-Topic ISD-Topic ;
+                            Url = WS73099cc142f48755-7b21313411809411ae9-67ac.htm-->
+      <div class="head">
+         <div class="head-block">
+            <div class="nav-group">
+               <!--browse buttons-->
+               <div class="browse">
+                  <nobr>
+                     <div id="ShowTocTitle" style="display:none">Show in Contents</div><a href="WS73099cc142f48755-7b21313411809411ae9-67ac.htm" target="content" onClick="javascript:showInContents('d0e922');" class="headNavLink" onmouseover="showInfo(document.getElementById('ShowTocTitle').innerHTML);" onmouseout="hideInfo();"><img src="../images/show_in_contents.gif" border="0"></a><div id="AddFavTitle" style="display:none">Add to Favorites</div><a href="WS73099cc142f48755-7b21313411809411ae9-67ac.htm" class="headNavLink" onClick="javascript:top.addToFavorites();" onmouseover="showInfo(document.getElementById('AddFavTitle').innerHTML);" onmouseout="hideInfo();"><img src="../images/add_favorite.gif" border="0"></a><div id="homeTitle" style="display:none">Home: Autodesk FBX Converter Help</div><a href="WS1a9193826455f5ff-6d855556117c4584e54-20b8.htm" target="content" class="headNavLink" onmouseover="showInfo(document.getElementById('homeTitle').innerHTML);" onmouseout="hideInfo();"><img src="../images/nav-home-xp.gif" border="0"></a><span class="home-button-separator">&nbsp;</span><div id="prevTitle" style="display:none">COLLADA conversion notes</div><a href="WS73099cc142f48755-7b21313411809411ae9-67af.htm" class="headNavLink" onmouseover="showInfo(document.getElementById('prevTitle').innerHTML);" onmouseout="hideInfo();"><img src="./../images/nav-prev-xp.gif" border="0"></a><div id="parentTitle" style="display:none">COLLADA conversion notes</div><a href="WS73099cc142f48755-7b21313411809411ae9-67af.htm" class="headNavLink" onmouseover="showInfo(document.getElementById('parentTitle').innerHTML);" onmouseout="hideInfo();"><img src="./../images/nav-up-xp.gif" border="0"></a><img src="./../images/nav-null-xp.gif" border="0"></nobr>
+               </div>
+               <!--end browse buttons-->
+            </div>
+            <div class="button-info"><span id="infoline">&nbsp;</span></div>
+            <div class="ancestry"><a href="WS73099cc142f487553b93539f117c42d9952b4.htm">Conversion options</a>&nbsp;&gt;&nbsp;<a href="WS73099cc142f48755-7b21313411809411ae9-67af.htm">COLLADA conversion notes</a>&nbsp;&gt;&nbsp;
+            </div>
+            <div class="head-text"><span>What’s not supported by COLLADA</span></div>
+         </div>
+      </div>
+      <div class="head-margin">&nbsp;</div>
+      <div style="line-height: 0pt">&nbsp;</div>
+      <div class="head-margin">&nbsp;</div><span class="anchor_wrapper"><a name="WS73099cc142f48755-7b21313411809411ae9-67ac"></a></span>
+      <!--Body-->
+      <!--UList--><span class="anchor_wrapper"><a name="WS73099cc142f48755-7b21313411809411ae9-67aa"></a></span><p class="list-intro"><span class="anchor_wrapper"><a name="WS1a9193826455f5ff-2ade9d9118a20d4f813ed6"></a></span>The following is a list of elements that
+         DAE (COLLADA) do not support on export or import.
+      </p>
+      <ul>
+         <li>Triangles,
+            polylist, and polygons. The FBX Converter  exports polygons without
+            holes, and imports them without holes and triangles.
+         </li>
+         <li>Bake
+            &amp; single matrices
+         </li>
+         <li>Variable
+            sampling rates.
+         </li>
+         <li>Absolute
+            Paths (when invalid)
+         </li>
+         <li>Instances</li>
+         <li>Skew</li>
+         <li>Non-standard
+            Materials and maps for different parameters
+         </li>
+         <li>Orthographic
+            cameras
+         </li>
+         <li>Normals
+            (for skin and shape)
+         </li>
+         <li>Light
+            parameters
+         </li>
+         <li>Vertex
+            animation
+         </li>
+         <li>Material
+            parameters animations
+         </li>
+         <li>Effects
+            specialized profiles
+         </li>
+         <li>COLLADA
+            physics
+         </li>
+      </ul>
+      <div><span class="anchor_wrapper"><a name="WS1a9193826455f5ff-2ade9d9118a20d4f813ed7"></a></span><div class="note-note"><span class="label">Note</span>Export or import to DAE (COLLADA) can destroy
+            or produce unpredictable results for some elements.
+         </div>
+      </div>
+      <div class="footer-block"><a href="javascript:doComments('');"><span class="comments-link">Please send us your comment about this page</span></a></div><br></body>
+</html>

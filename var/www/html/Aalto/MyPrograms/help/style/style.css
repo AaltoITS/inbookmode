@@ -1,0 +1,587 @@
+/**************************************************************************************/
+/* heading/banner style definitions                                                   */
+/**************************************************************************************/
+DIV.HeadingDiv  /* wraps the entire heading/banner area */
+{
+	margin-left:-16;
+	margin-right:-16;
+	margin-top:-10;
+	margin-bottom:14;
+	background-image:url(../images/ac-headbanner.gif);
+	background-repeat:no-repeat;
+}
+
+TABLE.HeadingTable /* inside the HeadingDiv */
+{
+	margin-right:-10;
+	width:103%; background-color: transparent;
+}
+
+/**************************************************************************************/
+/* tables                                                                             */
+/**************************************************************************************/
+/**** Tab definitions ****/
+/**** I tried adding the following attributes tot he Table and DIV styles but the dropshadow effected the table cells as well:
+filter:dropshadow(color=#000000,OffX=1,OffY=2,Positive=1)   ****/
+TABLE.TabTable 	/* table that holds the tabs */
+{
+	background:transparent
+}
+
+TD.TabOnCell 	/* "selected" tab */
+{
+	width:80;
+	text-align:center;
+	background:url(../images/ac.TabOn2.gif);
+}
+
+TD.TabOffCell 	/* "unselected" tab */
+{
+	width:80;
+	text-align:center;
+	background:url(../images/ac.TabOff2.gif);
+}
+
+TD.TabGreyCell 	/* "unavailable" tab */
+{
+	width:80;
+	text-align:center;
+	background:url(../images/ac.TabGrey2.gif);
+}
+
+DIV.TabOn 	/* formatting of "selected" tab label */
+{
+	font-size: 8pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+DIV.TabOff 	/* formatting of "unselected" tab label */
+{
+	font-size: 8pt;
+	font-weight: bold;
+	text-decoration: none;
+	filter:dropshadow(color=#000000,OffX=2,OffY=3,Positive=1);
+}
+
+DIV.TabGrey 	/* formatting of "unavailable" tab label */
+{
+	font-size: 8pt;
+	font-weight: bold;
+	color: Gray;
+	text-decoration: none;
+	filter:dropshadow(color=#000000,OffX=2,OffY=3,Positive=1);
+}
+
+TD.InfoLine 	/* browse button info text */
+{
+	font-size: 7pt;
+	visibility: hidden;
+	color: white;
+	line-height: 7pt;
+}
+
+TABLE.HeadNavTable
+{
+	background-color: transparent;
+}
+
+TD.NavGif	/* formats the cells that hold the browse buttons and info text */
+{
+	padding:1;
+	align:center
+}
+SPAN.BookTitleLink  /* formats the TOPSTYLEn text (see USERMACROS.TXT) */
+{
+	color:#ffffff;
+	font-weight:normal;
+	font-style:italic;
+	font-family: arial,helvetica;
+	font-size:8pt;
+	text-decoration: none;
+}
+
+/**** Heading ****/
+DIV.TopHead 	/* heading text */
+{
+	margin-left: 10pt;
+	line-height: 18pt;
+	width:95%;
+	color: white;
+	font-size: 14pt;
+	Filter: DropShadow(Color=#000000, OffX=2, OffY=1, Positive=1, Enabled=true);
+}
+
+/**** Top portion of banner (nav area) ****/
+DIV.BookTitle 	/* formats the TOPSTYLEn text (see USERMACROS.TXT) */
+{
+	padding-left:10pt;
+	padding-top:5pt;
+	line-height: 8pt;
+}
+
+TD.BookTitleCell  /* formats the TOPSTYLEn cell */
+	{
+	width: 50%
+}
+
+A.nohref
+{
+	text-decoration: none;
+	cursor: default;
+}
+
+.note-Note, .note-Warning, .note-Tip, .note-Related, .note-Important
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.note-label-Note, .note-label-Tip, .note-label-Important, .note-label-Related
+{
+	font-weight: bold;
+	color: #CC0000;
+	padding-right: 5px;
+}
+
+.note-label-Warning
+{
+	font-weight: bold;
+	color: #FF0000;
+	padding-right: 5px;
+}
+
+.table-title
+{
+	padding-top: 15px;
+	padding-bottom: 10px;
+	font-size: large;
+}
+
+.topic-group, .section, .collapsable_section
+{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.collapsable_section
+{
+	margin-left:5px;
+	margin-right: 5px;
+}
+
+h3.section-title
+{
+    font-weight: bold;
+}
+
+.topic-group-summary
+{
+
+}
+.chapter-summary
+{
+
+}
+
+h3.list-intro
+{
+	font-size: 10pt;
+	margin-bottom: 5pt;
+	font-weight: bold;
+	color: #990000;
+}
+
+.emphasis-strong
+{
+	font-weight: bold;
+}
+
+.concept, .quick-reference, .procedure
+{
+}
+
+.quick-reference-list
+{
+}
+
+.art
+{
+}
+
+.tab
+{
+	background-color: grey;
+	color: blue;
+}
+
+.selected-tab
+{
+	background-color: white;
+	color: black;
+}
+
+.code-block
+{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 15px;
+}
+
+.code-line, .prompt
+{
+    font-family:"Courier New", Courier, monospace;
+    font-size: 10pt;
+}
+
+.blurb
+{
+}
+
+.topic-list, .see-also-list
+{
+	padding-top: 5pt;
+	padding-bottom: 5pt;
+}
+
+H1
+{
+	font-size: 11pt;
+	font-weight: bold;
+	color: #003399;
+}
+
+H2, H3
+{
+	font-size: 10pt;
+	font-weight: bold;
+	color: #003399;
+}
+
+H4
+{
+    font-size: 9pt;
+    font-weight: bold;
+    color: #003366;
+    margin-top: 10pt;
+	margin-bottom: -8pt;
+}
+
+DIV.procedure-list
+{
+	font-size: 8pt;
+	margin-top: 15pt;
+	margin-bottom: 4pt
+}
+
+.procedure-list-item
+{
+	font-size: 8pt;
+	margin-top: 5pt;
+	margin-bottom: 4pt
+}
+
+OL.procedure-list
+{
+	margin-top: 6pt;
+	margin-bottom: 6pt;
+}
+
+.procedure-litem, .topiclist-litem
+{
+    margin-bottom: 6pt;
+}
+
+.term, .qrentry-term
+{
+	margin-top: 2pt;
+	margin-bottom: 2pt;
+	font-size: 9pt;
+	text-align: left;
+	font-weight: bold;
+	color: #003366;
+}
+
+.definition, .qrentry-definition
+{
+	padding-top: 2pt;
+	padding-bottom: 2pt;
+	font-size: 9pt;
+}
+
+.rqsection-leadin
+{
+	font-size: 8pt;
+	font-weight: bold;
+	color: #990000;
+}
+.rqsection-leadin H3
+{
+	margin-bottom:10px;
+}
+
+.rqsection-leadin P
+{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+.qrentry-tablerow
+{
+}
+
+.qrsection
+{
+}
+
+DIV.CPMTable TR
+{
+    vertical-align:top;
+}
+
+DIV.CPMTable TD, DIV.CPMTable TH
+{
+    padding: 5px;
+}
+
+TABLE.Ruled, TABLE.RuledWide
+{
+    border-top: 1px solid Black;
+}
+
+TABLE.Ruled TD, TABLE.RuledWide TD, TABLE.Ruled TH, TABLE.RuledWide TH
+{
+    border-bottom: 1px solid Black;
+}
+
+TR.RuledHeading, TR.RuledWideHeading
+{
+    background-color:#EEEEEE;
+}
+
+TR.RuledEvenRow, TR.RuledWideEvenRow
+{
+    background-color:#EEEEEE;
+}
+
+TR.RuledOddRow, TR.RuledWideOddRow
+{
+    background-color:#FFFF99;
+}
+
+DIV.FooterDiv {
+	margin-left:-16px;
+	margin-right:-16px;
+	margin-top: 25pt;
+	margin-bottom: 20pt;
+	background-image:url(../images/ac.mainback.gif);
+	border-top: 1px #003399 solid;
+	border-bottom: 2px #003399 solid;
+	text-align : right;
+	padding-right: 10px;
+	padding-top: 8px;
+	padding-bottom: 10px;
+}
+
+UL {
+	list-style : disc;
+}
+
+UL {
+    margin-left: 13pt;
+}
+
+.heading_3_notoc {
+    font-size: 10pt; font-weight: bold; color: #333399
+}
+
+.list-note {
+    margin-top: 7pt;
+    margin-bottom: 9pt;
+}
+
+.figure_title, .figure_title_collapsable {
+    color: #827;
+	font-family: Verdana;
+	font-size: 10pt;
+	font-weight: bold;
+	line-height: 13pt;
+	margin-bottom: 3pt;
+	margin-top: 12pt
+}
+
+.char_italic {
+    font-style: italic;
+}
+
+.qrEntryHeadTitle, .qrEntryTitle, .qrTitle
+{
+    font-size:9pt;
+    padding: 3pt 2pt 3pt 2pt;
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+}
+
+.qrEntryHeadTitle, .qrEntryTitle
+{
+    font-weight:bold;
+    color:white;
+ }
+
+.qrEntryHeadTitle, .qrEntryTitle, .qrEntryValue
+{
+   padding-left: 7pt;
+}
+
+.qrEntryValue
+{
+    font-size:9pt;
+}
+
+.qrItemLink
+{
+    color: #333399;
+    text-decoration:none;
+}
+
+.qrEntryHeadTitle
+{
+    background-color: #3366AA;
+}
+
+.qrEntryTitle
+{
+    background-color: #6699CC;
+}
+.qrTitle
+{
+    color:#993333;
+    background-color: #FFAA66;
+    vertical-align: middle;
+    text-align : center;
+}
+
+
+div.qrItem
+{
+}
+
+hr.qr_line1
+{
+    height:3px;
+    color:#FFAA66;
+}
+
+hr.qr_line2
+{
+    height:3px;
+    color:#3366AA;
+}
+
+/* Concept example */
+P.example {
+font-size: 9pt;
+color: #000;
+background-color : #77aacc;
+padding-top: 7pt;
+padding-bottom:7pt;
+padding-left:15pt;
+padding-right:15pt;
+margin-right: 0pt;
+margin-left: 0pt;
+}
+
+table.void {
+}
+
+DT
+{
+color: #038;
+font-size:10pt;
+font-weight:bold;
+padding-top: 12pt;
+padding-bottom: 0pt;
+}
+
+DL
+{
+}
+
+SPAN.UIString_MenuText
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_CommandName
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_DialogCaption
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_PromptMessage
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_KeyboardEntry
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_KeyCaps
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_EntryField
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.UIString_Unspecified
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.CharSpan_Emphasis
+{
+    font-style: italic;
+    font-weight: bold;
+}
+SPAN.CharSpan_Strong
+{
+    font-style: normal;
+    font-weight: bold;
+}
+SPAN.CharSpan_Special
+{
+    font-style: normal;
+    font-weight: bold;
+}
+
+SPAN.CharSpan_KeyboardEntry
+{
+}
+
+DIV.comments
+{
+	font-weight: bold;
+	color: red;
+}
+
+/* Styles for navigation button text */
+#homeTitle {
+color:#999999;
+}

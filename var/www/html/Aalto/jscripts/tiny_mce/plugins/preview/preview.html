@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<script type="text/javascript" src="../../tiny_mce_popup.js"></script>
+
+<script type="text/javascript" src="jscripts/embed.js"></script>
+
+<script type="text/javascript"><!--
+
+document.write('<base href="' + tinyMCEPopup.getWindowArg("base") + '">');
+
+// -->
+
+</script>
+
+<title>{#preview.preview_desc}</title>
+
+</head>
+
+<body id="content" style="line-height: 20px" onload="countLines();">
+<div id="content_2"></div>
+<script type="text/javascript">
+
+	document.write(tinyMCEPopup.editor.getContent());
+
+</script>
+<script>
+function countLines() {
+
+  var divHeight = document.getElementById('content').offsetHeight;
+  var lineHeight = parseInt(document.getElementById('content').style.lineHeight);
+  var lines = divHeight / lineHeight;
+  //alert("height: " + divHeight);
+  var count_div = divHeight / 430;
+  var i;
+  var first_top = 430;
+  for (i = 1; i <= count_div; i++) {
+    if(i === 1){
+      var martop = first_top * i;
+    } else {
+      var martop = (435 * i);
+    }
+   
+    var martop_2 = martop;
+    //alert(martop_2);
+    //document.getElementById('content_2').innerHTML += '<div style="position:absolute;width:100%;text-align:center;padding:1px;margin-top:'+martop+'px;background:#0e0e0e;"></div>';
+    document.getElementById('content_2').innerHTML += '<div style="position:absolute;width:100%;text-align:center;height: 0px;border: 0px solid #4CAF50;margin-top:'+martop_2+'px;"><font color="red"><b><i>******************* Insert Page Break *******************</i></b></font></div>'
+    //document.getElementById('content_2').innerHTML += '<div style="position:absolute;width:100%;text-align:center;padding:1px;margin-top:'+martop_3+'px;background:#0e0e0e;"></div>'
+  }
+}
+</script>
+</body>
+
+</html>
+

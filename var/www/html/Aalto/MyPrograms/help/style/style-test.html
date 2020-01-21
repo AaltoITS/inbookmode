@@ -1,0 +1,320 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO8859_1">
+   
+      <title>Style test cases</title>
+      <link rel="stylesheet" type="text/css" href="cpm.css">
+      <script language="javascript">
+      		function hideInfo() {
+                info = document.getElementById('infoline');
+                info.style.visibility='hidden';
+            }
+            function showInfo(title) {
+            	//alert(title);
+                info = document.getElementById('infoline');
+                info.innerText = title;
+                info.style.visibility='visible';
+            }
+        </script>
+      </head>
+   <body>
+
+	<div class="head">
+		<div class="head-block">
+		   <div class="nav-group">
+			  <form class="ask-me" onsubmit="AWAsk(document.all.awSearch.value);return false;"><input class="ask-me-image" type="image" align="absmiddle" src="../images/aw.awAskButton.gif"><input class="ask-me-text" type="text" align="absmiddle" name="awSearch"></form>
+			  <!--browse buttons-->
+			  <div class="browse">
+				 <nobr>
+					<div id="prevTitle" style="display:none">Prev title</div>
+					<a href="WScedd0d2069f889345e3974fa25667833-7f82.html"
+						class="headNavLink"
+						onmouseover="showInfo(document.getElementById('prevTitle').innerText);"
+						onmouseout="hideInfo();">
+						<img src="../images/nav-prev-xp.gif" border="0">
+					</a>
+					<div id="parentTitle" style="display:none">Parent title</div>
+					<a href="WScedd0d2069f889345e3974fa25667833-7f8f.html"
+						class="headNavLink"
+						onmouseover="showInfo(document.getElementById('parentTitle').innerText);"
+						onmouseout="hideInfo();">
+						<img src="../images/nav-up-xp.gif" border="0">
+					</a>
+					<div id="nextTitle" style="display:none">Next title</div>
+					<a href="WS308e602fa5632d5d16ff9e0f966754aed-7fec.html"
+						class="headNavLink"
+						onmouseover="showInfo(document.getElementById('nextTitle').innerText);"
+						onmouseout="hideInfo();">
+						<img src="../images/nav-next-xp.gif" border="0">
+					</a>
+				</nobr>
+			  </div>
+
+			  <!--end browse buttons-->
+		   </div>
+		   <div class="button-info" style="width:100%"><span id="infoline" style="width:100%">&nbsp;</span></div>
+		   <div class="head-text"><span>Inserting a Sheet List</span></div>
+		</div>
+		</div>
+		<div style="line-height: 0pt">&nbsp;</div>
+	<div class="head-margin">&nbsp;</div>
+
+
+   <div class="note-note">
+   <span class="label">NOTE</span>
+   NOTE text
+   </div>
+
+   <div class="note-warning">
+   <span class="label">WARNING</span>
+   NOTE text
+   </div>
+
+   <div class="note-related">
+   <span class="label">RELATED</span>
+   NOTE text
+   </div>
+
+   <div class="note-important">
+   <span class="label">IMPORTANT</span>
+   NOTE text
+   </div>
+
+   <br/>
+
+   <P class="table-title">Table title</P>
+   <table class="table" border="1">
+   <tr>
+   <td>
+   Notes within table:
+   </td>
+   </tr>
+   <tr>
+   <td>
+      <div class="note-note">
+      <span class="label">NOTE</span>
+      NOTE text
+      </div>
+
+      <div class="note-warning">
+      <span class="label">WARNING</span>
+      NOTE text
+      </div>
+
+      <div class="note-related">
+      <span class="label">RELATED</span>
+      NOTE text
+      </div>
+
+      <div class="note-important">
+      <span class="label">IMPORTANT</span>
+      NOTE text
+      </div>
+   </td>
+   </tr>
+   </table>
+
+   <p>Notes within list</p>
+   <ul>
+   		<li>
+   				<p>Para</p>
+              <div class="note-note">
+              <span class="label">NOTE</span>
+              NOTE text
+              </div>
+              <p>Para</p>
+              <div class="note-warning">
+              <span class="label">WARNING</span>
+              NOTE text
+              </div>
+              <p>Para</p>
+              <div class="note-related">
+              <span class="label">RELATED</span>
+              NOTE text
+              </div>
+              <p>Para</p>
+              <div class="note-important">
+              <span class="label">IMPORTANT</span>
+              NOTE text
+              </div>
+              <p>Para</p>
+   		</li>
+   </ul>
+
+   <p>Paragraph</p>
+
+   <span class="charspan-keyboardEntry">CharSpan[@type='KeyboardEntry']</span><br>
+   <em>CharSpan[@type='Emphasis']</em><br>
+   <span class="charspan-strong">CharSpan[@type='Strong']</span><br>
+   <span class="charspan-special">CharSpan[@type='Special']</span><br><br>
+
+   <em class="strong">Emphasis[@type='strong']</em><br>
+   <em class="extreme">Emphasis[@type='extreme']</em><br>
+   <em class="mild">Emphasis[@type='mild']</em><br><br>
+
+   <span class="uis-promptMessage">UIString[@type='PromptMessage']</span><br>
+   <span class="uis-dialogCaption">UIString[@type='DialogCaption']</span><br>
+   <span class="uis-entryField">UIString[@type='EntryField']</span><br>
+   <span class="uis-menuText">UIString[@type='MenuText']</span><br>
+   <span class="uis-stringTable">UIString[@type='StringTable']</span><br>
+   <span class="uis-unspecified">UIString[@type='Unspecified']</span><br><br>
+
+   <div class="comments-editor">comments-editor</div>
+   <div class="comments-localizer">comments-localizer</div>
+   <div class="comments-special">comments-special</div>
+   <div class="comments-author">comments-author</div>
+
+   <p class="prompt">Prompt</p>
+
+   <p class="entryField">EntryField</p>
+
+   <span class="keyboardEntry">KeyboardEntry</span><br>
+   <span class="keyCaps">KeyCaps</span><br>
+   <span class="filePath">C:\Program Files\Autodesk\Product</span> (FilePath)<br>
+   <span class="appSetting">AppSetting</span><br>
+   <span class="bookTitle">BookTitle</span><br>
+   <span class="coord">X,Y</span> (Coord)<br>
+   <span class="codeIdentifier">CodeIdentifier</span><br>
+   <span class="dialogCaption">DialogCaption</span><br>
+
+   <span class="glyphCopyright"><sup>&#169;</sup></span>(Glyph Copyright)<br>
+   <span class="glyphTM"><sup>&#8482;</sup></span>(Glyph TM)<br>
+   <span class="glyphArrow"><img src="../images/ac.menuaro.gif"/></span>(Glyph Arrow)<br>
+   <span class="glyphEllipsis">&#8230;</span>(Glyph Ellipsis)<br>
+   <span class="glyphRegistered"><sup>&#174;</sup></span>(Glyph Registered)<br>
+
+   <a href="www.autodesk.com">www.autodesk.com</a><br>
+
+   <span class="term">Term</span><br>
+
+   <dl>
+   	<dt>DT element</dt>
+   	<dd>DD element</dd>
+   	<dt><span class="term">Term</span> within DL</dt>
+   	<dd><div class="definition">Definition within DD</div></dd>
+   	<dd><div class="brief_example">BriefExample within DD</div></dd>
+   </dl>
+
+   <div class="dl_section">DLSection</div>
+
+   <div class="section">Section</div>
+   <p class="summary">Summary</p>
+   <hr>
+
+   <div class="list-intro">Unordered list</div>
+   <ul>
+   		<li> LItem
+   		<li> LItem
+   		<li> LItem
+   </ul>
+   <div class="enclosed-list">
+   <div class="list-intro">Enclosed ordered list</div>
+   <ol>
+   		<li> LItem1
+   		<li> LItem2
+   		<li> LItem3
+   </ol>
+   <div class="list-intro">Enclosed unordered list</div>
+   <ul>
+   		<li> LItem
+   		<li> LItem
+   		<li> LItem
+   </ul>
+   </div>
+   <hr>
+   <div class="list-intro">Ordered list</div>
+   <ol>
+   		<li> LItem1
+   		<li> LItem2
+   		<li> LItem3
+   </ol>
+   <div class="enclosed-list">
+   <div class="list-intro">Enclosed ordered list</div>
+   <ol>
+   		<li> LItem1
+   		<li> LItem2
+   		<li> LItem3
+   </ol>
+   <div class="list-intro">Enclosed unordered list</div>
+   <ul>
+   		<li> LItem
+   		<li> LItem
+   		<li> LItem
+   </ul>
+   </div>
+   <ol start="4">
+   		<li> LItem4
+   		<li> LItem5
+   		<li> LItem6
+   </ol>
+   <hr>
+
+   <P class="table-title">Table title</P>
+   <TABLE class="table" border="1" bordercolorlight="#FFFFFF" bordercolordark="#000000" cellpadding="5" cellspacing="0" frame="box">
+   	<TR>
+   		<TH class="table-heading">
+   		TH
+   		</TH>
+   	</TR>
+   	<TR class="RuledWideOddRow">
+   		<TD class="table-body">
+   		TD (RuledWide odd row)
+   		</TD>
+   	</TR>
+   	<TR class="RuledWideEvenRow">
+   		<TD class="table-body">
+   		TD (RuledWide even row)
+   		</TD>
+   	</TR>
+   	<TR>
+   		<TD class="table-footing">
+   		Table footing
+   		</TD>
+   	</TR>
+   </TABLE>
+
+   <P class="figure-title">Figure title</P>
+
+   <!--p.note:before { content: "Note: " }-->
+
+
+
+	<div class="codeBlock">
+		<p class="codeLine">line</p>
+		<div class="codeBlock">
+			<p class="codeLine">line</p>
+			<p class="codeComment">
+				Following line is CodeSpace
+			</p>
+			<p class="codeSpace"/>
+			<p class="codeLine">line</p>
+			<p class="codeLine">line</p>
+			<div class="codeBlock">
+				<p class="codeLine">line</p>
+				<p class="codeComment">
+					Following line is CodeSpace
+				</p>
+				<p class="codeSpace"/>
+				<p class="codeLine">line</p>
+				<p class="codeLine">line</p>
+			</div>
+		</div>
+		<p class="codeLine">line</p>
+	</div>
+
+	<div class="footer-block">
+		<a href="javascript:doComments();">
+			<span class="comments-link">Comments ?</span>
+		</a>
+	</div>
+	<br>
+
+	<!--
+	<span style="display:none">
+		<object id="awApi4" name="awApi4" classid="clsid:c1908682-7b2c-4ab0-b98e-183649a0bf84" border="0" width="0" height="0"></object>
+	</span>
+	-->
+
+
+   </body>
+</html>

@@ -1,0 +1,138 @@
+cd /cygdrive/c/cmsbuild-resources/production/ce_4x/1.0
+ant -buildfile ./src/modules/chm/ant/build.xml -lib ./lib/ext/ant -propertyfile ./../../../tmp/ce4_production_1.0//MED/FBX/FBX-Converter-Sharon/English//20080916070300030_TraceyHouston/build.properties ce.exec.chm.run
+cygpath: can't convert empty path
+Buildfile: .\src\modules\chm\ant\build.xml
+
+ce.exec.chm.contentsort.init:
+    [mkdir] Created dir: C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston\tmp.contentsort
+     [copy] Copying 1 file to C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston\utils
+
+ce.exec.chm.contentsort.sort:
+     [java] [INFO] Sorting started. Locale = en_US
+     [java] [INFO] Sorting configuration = content-sorting-config.xml
+
+ce.exec.chm.contentsort.movefiles:
+     [copy] Copying 1 file to C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston
+
+ce.exec.chm.contentsort.clean:
+   [delete] Deleting directory C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston\tmp.contentsort
+
+ce.exec.chm.contentsort:
+
+ce.exec.chm.resourcedef.processfilelist:
+
+ce.exec.chm.resourcedef.processproperties.init:
+
+ce.exec.chm.resourcedef.processproperties:
+     [echo] Processing Resource Definition to determine hhp-edits and copy to chm root directory.
+     [xslt] Processing C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston\sharon_html_help-resource-def.xml to C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston\resourcedef.properties
+     [xslt] Loading stylesheet C:\cmsbuild-resources\production\ce_4x\1.0\src\common\xsl\ce-resourcedef-properties.xsl
+
+ce.exec.chm.resourcedef:
+
+ce.exec.langpreprocess.init:
+
+ce.exec.langpreprocess.main:
+     [echo] Locale: English, en_US
+     [move] Moving 1 files to C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston
+
+ce.exec.langpreprocess:
+
+ce.exec.chm.searchdata.generate:
+     [echo] Generating Search Entries Javascript file
+     [move] Moving 1 files to C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston
+
+ce.exec.chm.searchdata:
+
+ce.exec.chm.run:
+
+ce.misc.createbuildpropfile:
+[propertyfile] Updating property file: C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston\build.properties
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+exit 0
+cd /cygdrive/c/cmsbuild-resources/production/ce_4x/1.0
+ant -buildfile ./src/modules/chm/ant/build.xml -lib ./lib/ext/ant -propertyfile ./../../../tmp/ce4_production_1.0//MED/FBX/FBX-Converter-Sharon/English//20080916070300030_TraceyHouston/build.properties ce.trfm.chm.run
+cygpath: can't convert empty path
+Buildfile: .\src\modules\chm\ant\build.xml
+
+ce.trfm.chm.htmltransform.chm.nfw:
+
+ce.trfm.chm.htmltransform.chm:
+
+ce.trfm.chm.htmltransform.htm:
+
+ce.trfm.chm.htmltransform.execute:
+     [echo] 
+     [echo]         ce.trfm.chm.htmltransform.outputdir    = ./files
+     [echo]         ce.trfm.chm.htmltransform.artdir       = ./../images
+     [echo]         ce.trfm.chm.htmltransform.animationdir = ./../
+     [echo]         ce.trfm.chm.htmltransform.resourcedir  = ./../
+     [echo]         ce.trfm.chm.htmltransform.xmlinputfile = ./map_content.xml
+     [echo]         ce.trfm.chm.htmltransform.entryxsl     = med_online_help.xsl
+     [echo]         
+     [java] Recoverable error
+     [java] Failure reading file:/C:/cmsbuild-resources/tmp/ce4_production_1.0/MED/FBX/FBX-Converter-Sharon/English/20080916070300030_TraceyHouston/cshelp.xml: no more input
+     [java] Recoverable error
+     [java] Failure reading file:/C:/cmsbuild-resources/tmp/ce4_production_1.0/MED/FBX/FBX-Converter-Sharon/English/20080916070300030_TraceyHouston/Command_Data.xml: no more input
+     [java] [DEBUG] Link created for Xref with label = 'Creating a conversion preset'
+     [java] [DEBUG] Link created for Xref with label = 'Conversion options'
+     [java] [DEBUG] Link created for Xref with label = 'Conversion options'
+     [move] Moving 1 files to C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston
+
+ce.trfm.chm.htmltransform:
+
+ce.trfm.chm.toc.init:
+
+ce.trfm.chm.toc.fix:
+
+ce.trfm.chm.toc:
+
+ce.trfm.chm.hhpedits.init:
+
+ce.exec.chm.resourcedef.processproperties.init:
+
+ce.exec.chm.resourcedef.processproperties:
+     [echo] Processing Resource Definition to determine hhp-edits and copy to chm root directory.
+     [xslt] Processing C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston\sharon_html_help-resource-def.xml to C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston\resourcedef.properties
+     [xslt] Loading stylesheet C:\cmsbuild-resources\production\ce_4x\1.0\src\common\xsl\ce-resourcedef-properties.xsl
+
+ce.trfm.chm.hhpedits.apply:
+
+ce.trfm.chm.hhpedits:
+
+ce.trfm.chm.convertpng.init:
+
+ce.trfm.chm.convertpng:
+
+ce.trfm.chm.tooltipfiles.init:
+
+ce.trfm.chm.tooltipfiles:
+
+ce.trfm.chm.wthfiles.init:
+
+ce.trfm.chm.wthfiles:
+
+ce.trfm.chm.run:
+
+ce.misc.createbuildpropfile:
+[propertyfile] Updating property file: C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston\build.properties
+
+BUILD SUCCESSFUL
+Total time: 3 seconds
+exit 0
+cd /cygdrive/c/cmsbuild-resources/production/ce_4x/1.0
+ant -buildfile ./src/modules/chm/ant/build.xml -lib ./lib/ext/ant -propertyfile ./../../../tmp/ce4_production_1.0//MED/FBX/FBX-Converter-Sharon/English//20080916070300030_TraceyHouston/build.properties ce.trfm.chm.remote.done
+cygpath: can't convert empty path
+Buildfile: .\src\modules\chm\ant\build.xml
+
+ce.trfm.chm.remote.done.convertpng:
+
+ce.trfm.chm.remote.done:
+     [echo] This step may fail if the expected OUTPUT files are not found. This can be caused by some errors encountered in the transformation step.
+      [zip] Building zip: C:\cmsbuild-resources\tmp\ce4_production_1.0\MED\FBX\FBX-Converter-Sharon\English\20080916070300030_TraceyHouston\trfm-output.zip
+
+BUILD SUCCESSFUL
+Total time: 1 second
+exit 0

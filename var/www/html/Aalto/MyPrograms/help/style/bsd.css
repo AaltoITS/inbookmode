@@ -1,0 +1,32 @@
+DIV.task-step { margin-left: 15pt; display:table-row }
+DIV.task-step SPAN.label { display: table-cell; padding-right: 5px; font-weight: bold; }
+DIV.task-step SPAN.body { display:table-cell;  padding-top: 5pt; padding-bottom: 10pt; }
+
+/* head region */
+div.head {
+	background-image: url(../images/ac.tabs_not.gif);
+	/* background-repeat: repeat-y; */
+	margin-left: -12pt;
+	margin-right: -12pt;
+	margin-top: -10pt;
+	margin-bottom: 0pt;
+}
+
+
+DIV.dataset, DIV.question, DIV.answer  {
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+LI DIV.dataset, LI DIV.question, LI DIV.answer {
+	margin-left: 0pt;
+	margin-top: 2pt;
+	margin-bottom: 8pt;
+}
+
+DIV.dataset SPAN.label, DIV.question SPAN.label, DIV.answer SPAN.label {
+	color: #c00;
+	font-size: 9pt;
+	font-weight: bold;
+	padding-right: 5px;
+}

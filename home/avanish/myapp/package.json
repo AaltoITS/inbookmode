@@ -1,0 +1,26 @@
+{
+  "name": "myapp",
+  "version": "1.0.0",
+  "description": "Rest Api for Bimserver",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Avanish Chaurasiya",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.4.1",
+    "body-parser": "^1.17.1",
+    "express": "3.4.4",
+    "http": "0.0.0",
+    "path": "^0.12.7",
+    "request": "^2.81.0",
+    "requirejs": "^2.3.3",
+    "url": "^0.11.0",
+    "websocket": "^1.0.28",
+    "needle": "^1.6.0",
+    "file-base64": "^1.0.0",
+    "xhr2": "^0.1.4"
+  },
+  "devDependencies": {}
+}

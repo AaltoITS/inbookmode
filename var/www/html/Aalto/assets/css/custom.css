@@ -1,0 +1,108 @@
+table.mceLayout, textarea.tinyMCE {
+    width: 100% !important;
+}
+
+.note-desktop {
+    display: none;
+}
+
+/* make the toolbar wrap */
+.mceToolbar td {
+    display:table-row;
+    float: left;
+}
+.mceToolbar td:nth-of-type(11){
+    clear: left;
+}
+
+@media only screen and (min-width: 550px) {
+    /*table.mceLayout, textarea.richEditor {
+       width: 550px !important;
+    }*/
+    
+    .note-desktop {
+        display: block;
+    }
+    .note-mobile {
+        display: none;
+    }
+    
+    /* remove the toolbar wrap */
+    .mceToolbar td {
+        display:table-cell;
+        float: none;
+    }
+    mceToolbar td:nth-of-type(11){
+        clear: none;
+    }
+}
+
+table.dataTable thead th, table.dataTable thead td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #111;
+}
+
+div.dashboard-stat a {
+    text-decoration: none !important;
+}
+
+div.dashboard-stat a:hover {
+    color: #fff;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .page-header.navbar .page-logo img {
+        margin-left: -10px!important;
+    }
+    .navbar-nav {
+        margin: 0px 0px!important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .page-header.navbar .page-logo img {
+        margin-left: -18px!important;
+    }
+    .navbar-nav {
+        margin: 0px 0px!important;
+    }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .page-header.navbar .page-logo img {
+        margin-left: -18px!important;
+    }
+    .navbar-nav {
+        margin: 0px 0px!important;
+    }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .page-header.navbar .page-logo img {
+        margin-left: -20px!important;
+    }
+    .navbar-nav {
+        margin: 0px 0px!important;
+    }
+}
+
+/* bootstrap modal close icon positioning */
+button.close {
+    padding: 7px !important;  
+}
+
+input[type=checkbox] {
+    margin-top: 10px !important;
+}
+
+.modal-header, .modal-footer {
+    padding: 10px !important;
+}
+
+.form-group {
+    margin-bottom: 10px !important;
+}
